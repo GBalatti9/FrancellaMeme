@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    cursor: url("../../img/cursor1.png"), pointer;
+    background-image: url("../../img/fondo.gif");
+    background-repeat: repeat;
+    background-size: 200px 150px;
+}
+
+body::after{
+    opacity: 10%;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.img-size{
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#button{
+    padding: 0.5%;
+    cursor: url("../../img/cursor23.png"), pointer;
+    background-color: #7d7d7d;
+    animation: clickMe .5s infinite ease-in-out;
+    border-radius: 5px;
+    border: none;
+}
+
+@keyframes clickMe {
+    0% {
+        background-color: #7d7d7d;
+    }
+
+    50% {
+        background-color: #ebebeb;
+    }
+
+    100% {
+        background-color: #7d7d7d;
+    }
+}
+
+h1{
+    color: #ffff;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
