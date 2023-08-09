@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     height: 100vh;
     cursor: url("../../img/cursor1.png"), pointer;
-    background-image: url("../../img/fondo.gif");
+    background-image: url("../../img/giphy.gif");
     background-repeat: repeat;
     background-size: 200px 150px;
 }
