@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     display: flex;
     align-items: center;
@@ -16,13 +17,9 @@ body{
     background-size: 200px 150px;
 }
 
-body::after{
-    opacity: 10%;
-}
-
 .container{
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 250px;
     box-shadow: 1px 1px 10px black;
     border-radius: 5px;
     margin: 10px;
@@ -37,12 +34,13 @@ body::after{
 }
 
 #button{
-    padding: 0.5%;
+    padding: 3%;
     cursor: url("../../img/cursor23.png"), pointer;
     background-color: #7d7d7d;
     animation: clickMe .5s infinite ease-in-out;
     border-radius: 5px;
     border: none;
+    font-size: 20px;
 }
 
 @keyframes clickMe {
@@ -71,4 +69,27 @@ h1{
     bottom: 0;
     left: 0;
     margin: 15px;
+}
+
+@media(min-width: 480px){
+    
+    .container{
+        width: 400px;
+        height: 300px;
+    }
+    #button{
+        padding: 1.5%;
+    }
+}
+
+@media(min-width: 760px){
+    .container{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media(min-width: 968px){
+    #button{
+        padding: 0.5%;
+    }
 }
